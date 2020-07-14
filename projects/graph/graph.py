@@ -185,8 +185,8 @@ class Graph:
         for neighbor in self.get_neighbors(starting_vertex):
             if neighbor not in visited:
                 neighbor_path = self.dfs_recursive(neighbor, destination_vertex, visited, path)
-            if neighbor_path is not None:
-                return neighbor_path
+                if neighbor_path is not None:
+                    return neighbor_path
 
 if __name__ == '__main__':
     graph = Graph()  # Instantiate your graph
