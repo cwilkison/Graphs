@@ -85,6 +85,8 @@ while len(visited_rooms) < len(room_graph) - 1:
     # travel in the directoin of the move variable using travel function and opposite directions list at beginning
     player.travel(nxt_move)
    
+##MVP 1004 moves, 500 rooms visited
+
 # TRAVERSAL TEST
 visited_rooms = set()
 player.current_room = world.starting_room
